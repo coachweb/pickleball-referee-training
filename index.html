@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🏓 Pickleball Referee Training</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="app-wrapper">
+    <header class="app-header">
+      <h1>🏓 Pickleball Referee Training</h1>
+      <p class="subtitle">Test your knowledge of the official rules</p>
+    </header>
+
+    <!-- Quiz Screen -->
+    <div id="quiz-screen" class="card">
+      <div class="quiz-meta">
+        <span id="question-counter">Question 1 of 20</span>
+        <span id="score-display">Score: 0</span>
+      </div>
+
+      <div class="progress-bar-container">
+        <div id="progress-bar" class="progress-bar" style="width: 0%"></div>
+      </div>
+
+      <div id="question-area">
+        <p id="question-category" class="category-badge">Category</p>
+        <h2 id="question-text">Question text loads here</h2>
+      </div>
+
+      <div id="options-container" class="options-container"></div>
+
+      <div id="feedback-area" class="feedback-area hidden"></div>
+
+      <button id="next-btn" class="btn-next hidden">Next Question →</button>
+    </div>
+
+    <!-- End Screen -->
+    <div id="end-screen" class="card hidden">
+      <div class="end-content">
+        <div id="end-emoji" class="end-emoji">🏆</div>
+        <h2 id="end-title">Quiz Complete!</h2>
+        <p id="end-score" class="end-score">You scored 18 out of 20</p>
+        <p id="end-percent" class="end-percent">90%</p>
+        <p id="end-message" class="end-message">Outstanding performance!</p>
+        <button id="restart-btn" class="btn-restart">🔄 Restart Quiz</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
